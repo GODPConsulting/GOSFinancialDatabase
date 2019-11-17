@@ -1,0 +1,4 @@
+﻿CREATE AGGREGATE [wct].[FTEST](@expr1 NVARCHAR (4000), @expr2 FLOAT (53))
+    RETURNS FLOAT (53)
+    EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.FTEST];
+

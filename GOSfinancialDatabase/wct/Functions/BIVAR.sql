@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[BIVAR]
+(@z1 FLOAT (53), @z2 FLOAT (53), @rho FLOAT (53))
+RETURNS FLOAT (53)
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[BIVAR]
+

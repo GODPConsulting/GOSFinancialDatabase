@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[DIS]
+(@DSM FLOAT (53), @RV FLOAT (53), @P FLOAT (53), @D FLOAT (53))
+RETURNS FLOAT (53)
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[DIS]
+

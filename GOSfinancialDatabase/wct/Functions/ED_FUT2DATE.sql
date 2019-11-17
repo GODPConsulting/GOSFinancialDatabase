@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[ED_FUT2DATE]
+(@DeliveryCode NVARCHAR (4000), @StartDate DATETIME)
+RETURNS DATETIME
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[ED_FUT2DATE]
+

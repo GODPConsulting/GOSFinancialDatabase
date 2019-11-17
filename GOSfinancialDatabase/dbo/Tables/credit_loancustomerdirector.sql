@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[credit_loancustomerdirector] (
+    [CustomerDirectorId]          INT             IDENTITY (1, 1) NOT NULL,
+    [DirectorTypeId]              INT             NOT NULL,
+    [CustomerId]                  INT             NOT NULL,
+    [Name]                        VARCHAR (250)   NOT NULL,
+    [Position]                    VARCHAR (50)    NOT NULL,
+    [Address]                     VARCHAR (550)   NOT NULL,
+    [Email]                       VARCHAR (50)    NOT NULL,
+    [PhoneNo]                     VARCHAR (50)    NOT NULL,
+    [DateOfBirth]                 DATE            NULL,
+    [Signature]                   IMAGE           NULL,
+    [PoliticallyPosition]         BIT             NOT NULL,
+    [PercentageShare]             DECIMAL (18, 2) NULL,
+    [RelativePoliticallyPosition] BIT             NOT NULL,
+    [Active]                      BIT             NULL,
+    [Deleted]                     BIT             NULL,
+    [CreatedBy]                   VARCHAR (50)    NULL,
+    [CreatedOn]                   DATETIME        NULL,
+    [UpdatedBy]                   VARCHAR (50)    NULL,
+    [UpdatedOn]                   DATETIME        NULL,
+    CONSTRAINT [PK_credit_loancustomerdirector] PRIMARY KEY CLUSTERED ([CustomerDirectorId] ASC),
+    CONSTRAINT [FK_credit_loancustomerdirector_credit_directortype] FOREIGN KEY ([DirectorTypeId]) REFERENCES [dbo].[credit_directortype] ([DirectorTypeId]),
+    CONSTRAINT [FK_credit_loancustomerdirector_credit_loancustomer] FOREIGN KEY ([CustomerId]) REFERENCES [dbo].[credit_loancustomer] ([CustomerId])
+);
+

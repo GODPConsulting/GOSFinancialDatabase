@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[NETWORKDAYS_q]
+(@StartDate DATETIME, @EndDate DATETIME, @HolidayDates_RangeQuery NVARCHAR (MAX))
+RETURNS FLOAT (53)
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[NETWORKDAYS_q]
+

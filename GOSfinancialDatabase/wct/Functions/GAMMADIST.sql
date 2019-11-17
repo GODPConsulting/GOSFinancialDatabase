@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[GAMMADIST]
+(@X FLOAT (53), @Alpha FLOAT (53), @BETA FLOAT (53), @Cumulative BIT)
+RETURNS FLOAT (53)
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[GAMMADIST]
+

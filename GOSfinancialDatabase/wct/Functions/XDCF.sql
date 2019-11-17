@@ -1,0 +1,4 @@
+﻿CREATE AGGREGATE [wct].[XDCF](@Disc_rate FLOAT (53), @VDate DATETIME, @CFamt FLOAT (53), @CFdate DATETIME)
+    RETURNS FLOAT (53)
+    EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.XDCF];
+

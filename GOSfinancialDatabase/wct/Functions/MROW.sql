@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[MROW]
+(@Matrix NVARCHAR (MAX), @m INT)
+RETURNS NVARCHAR (MAX)
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[MROW]
+

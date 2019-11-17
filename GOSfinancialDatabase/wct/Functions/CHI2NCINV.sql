@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[CHI2NCINV]
+(@P FLOAT (53), @DF FLOAT (53), @Lambda FLOAT (53))
+RETURNS FLOAT (53)
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[CHI2NCINV]
+

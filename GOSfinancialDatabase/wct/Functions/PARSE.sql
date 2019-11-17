@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[PARSE]
+(@Text NVARCHAR (MAX), @Delimiters NVARCHAR (4000), @WordNo INT)
+RETURNS NVARCHAR (MAX)
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[PARSE]
+

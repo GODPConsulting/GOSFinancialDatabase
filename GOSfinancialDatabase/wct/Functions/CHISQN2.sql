@@ -1,0 +1,4 @@
+﻿CREATE AGGREGATE [wct].[CHISQN2](@obs FLOAT (53), @exp FLOAT (53))
+    RETURNS FLOAT (53)
+    EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.CHISQN2];
+

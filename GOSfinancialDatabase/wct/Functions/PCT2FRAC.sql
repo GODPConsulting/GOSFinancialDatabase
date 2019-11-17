@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[PCT2FRAC]
+(@Number FLOAT (53), @Digits INT)
+RETURNS NVARCHAR (4000)
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[PCT2FRAC]
+

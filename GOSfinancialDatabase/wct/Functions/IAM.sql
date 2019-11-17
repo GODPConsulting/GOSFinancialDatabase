@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[IAM]
+(@A FLOAT (53), @B FLOAT (53), @D_IM FLOAT (53), @DSM FLOAT (53), @R FLOAT (53), @P FLOAT (53), @Y FLOAT (53))
+RETURNS FLOAT (53)
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[IAM]
+

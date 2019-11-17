@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[ifrs_forecasted_pd] (
+    [ForeCastedId]        INT              IDENTITY (1, 1) NOT NULL,
+    [Year]                INT              NULL,
+    [PD1]                 DECIMAL (36, 20) NULL,
+    [PD2]                 DECIMAL (36, 20) NULL,
+    [PD3]                 DECIMAL (36, 20) NULL,
+    [PD4]                 DECIMAL (36, 20) NULL,
+    [PD5]                 DECIMAL (36, 20) NULL,
+    [PD6]                 DECIMAL (36, 20) NULL,
+    [PD7]                 DECIMAL (36, 20) NULL,
+    [LifeTimePD]          DECIMAL (36, 20) NULL,
+    [PDType]              VARCHAR (50)     NULL,
+    [ApplicablePD]        DECIMAL (36, 20) NULL,
+    [ProductCode]         VARCHAR (50)     NULL,
+    [LoanReferenceNumber] VARCHAR (50)     NULL,
+    [CompanyCode]         VARCHAR (50)     NULL,
+    [RunDate]             DATETIME         NULL,
+    [Active]              BIT              NULL,
+    [Deleted]             BIT              NULL,
+    [CreatedOn]           DATE             NULL,
+    [Createdby]           VARCHAR (50)     NULL,
+    [UpdatedBy]           VARCHAR (50)     NULL,
+    [UpdatedOn]           DATE             NULL
+);
+

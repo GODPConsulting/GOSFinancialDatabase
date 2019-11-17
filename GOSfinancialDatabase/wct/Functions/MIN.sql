@@ -1,0 +1,4 @@
+﻿CREATE AGGREGATE [wct].[MIN](@X FLOAT (53), @N INT)
+    RETURNS FLOAT (53)
+    EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.MIN];
+

@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[MATRIX2STRING]
+(@Matrix_TableName NVARCHAR (MAX), @ColumnNames NVARCHAR (4000), @GroupedColumnName NVARCHAR (4000), @GroupedColumnValue SQL_VARIANT)
+RETURNS NVARCHAR (MAX)
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[MATRIX2STRING]
+

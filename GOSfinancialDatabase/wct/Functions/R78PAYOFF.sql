@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[R78PAYOFF]
+(@IntAmt FLOAT (53), @NumPmts INT, @PeriodNo INT, @Pmt FLOAT (53))
+RETURNS FLOAT (53)
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[R78PAYOFF]
+

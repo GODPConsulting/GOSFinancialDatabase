@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[ISREGULARPAY]
+(@IssueDate DATETIME, @FirstPaymentDate DATETIME, @PmtPerYear INT)
+RETURNS BIT
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[ISREGULARPAY]
+

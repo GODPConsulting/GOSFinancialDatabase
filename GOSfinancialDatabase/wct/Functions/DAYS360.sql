@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[DAYS360]
+(@StartDate DATETIME, @EndDate DATETIME, @Method INT)
+RETURNS INT
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[DAYS360]
+

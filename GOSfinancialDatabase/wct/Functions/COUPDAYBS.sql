@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[COUPDAYBS]
+(@Settlement DATETIME, @Maturity DATETIME, @Frequency FLOAT (53), @Basis NVARCHAR (4000))
+RETURNS INT
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[COUPDAYBS]
+

@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[SUBSTITUTE]
+(@Text NVARCHAR (MAX), @Old_text NVARCHAR (MAX), @New_text NVARCHAR (MAX), @Instance_num INT)
+RETURNS NVARCHAR (MAX)
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[SUBSTITUTE]
+

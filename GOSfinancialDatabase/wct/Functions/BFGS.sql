@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[BFGS]
+(@Func NVARCHAR (MAX), @VarNames NVARCHAR (4000), @X NVARCHAR (4000), @H FLOAT (53), @tol FLOAT (53))
+RETURNS NVARCHAR (MAX)
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[BFGS]
+

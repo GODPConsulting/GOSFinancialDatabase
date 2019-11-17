@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[deposit_withdrawalform] (
+    [WithdrawalFormId]       INT             IDENTITY (1, 1) NOT NULL,
+    [Structure]              INT             NULL,
+    [Product]                INT             NULL,
+    [TransactionReference]   VARCHAR (50)    NULL,
+    [AccountNumber]          VARCHAR (50)    NULL,
+    [AccountType]            VARCHAR (50)    NULL,
+    [Currency]               INT             NULL,
+    [Amount]                 DECIMAL (18, 2) NULL,
+    [TransactionDescription] VARCHAR (50)    NULL,
+    [TransactionDate]        DATE            NULL,
+    [ValueDate]              DATE            NULL,
+    [WithdrawalType]         VARCHAR (50)    NULL,
+    [InstrumentNumber]       VARCHAR (50)    NULL,
+    [InstrumentDate]         DATE            NULL,
+    [ExchangeRate]           DECIMAL (18, 2) NULL,
+    [TotalCharge]            DECIMAL (18, 2) NULL,
+    [Active]                 BIT             NULL,
+    [Deleted]                BIT             NULL,
+    [CreatedBy]              VARCHAR (50)    NULL,
+    [CreatedOn]              DATETIME        NULL,
+    [UpdatedBy]              VARCHAR (50)    NULL,
+    [UpdatedOn]              DATETIME        NULL,
+    CONSTRAINT [PK_deposit_withdrawalform] PRIMARY KEY CLUSTERED ([WithdrawalFormId] ASC)
+);
+

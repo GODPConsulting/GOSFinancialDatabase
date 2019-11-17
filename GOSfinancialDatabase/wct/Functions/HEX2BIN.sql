@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[HEX2BIN]
+(@Number NVARCHAR (4000), @Places FLOAT (53))
+RETURNS NVARCHAR (4000)
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[HEX2BIN]
+

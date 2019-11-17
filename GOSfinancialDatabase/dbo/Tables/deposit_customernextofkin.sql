@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[deposit_customernextofkin] (
+    [NextOfKinId]  INT          IDENTITY (1, 1) NOT NULL,
+    [CustomerId]   INT          NOT NULL,
+    [Title]        VARCHAR (50) NULL,
+    [Surname]      VARCHAR (50) NULL,
+    [FirstName]    VARCHAR (50) NULL,
+    [OtherName]    VARCHAR (50) NULL,
+    [DOB]          DATE         NULL,
+    [GenderId]     INT          NULL,
+    [Relationship] VARCHAR (50) NULL,
+    [MobileNumber] VARCHAR (50) NULL,
+    [Email]        VARCHAR (50) NULL,
+    [Address]      VARCHAR (50) NULL,
+    [City]         VARCHAR (50) NULL,
+    [State]        VARCHAR (50) NULL,
+    [Active]       BIT          NULL,
+    [Deleted]      BIT          NULL,
+    [CreatedBy]    VARCHAR (50) NULL,
+    [CreatedOn]    DATETIME     NULL,
+    [UpdatedBy]    VARCHAR (50) NULL,
+    [UpdatedOn]    DATETIME     NULL,
+    CONSTRAINT [PK_deposit_customernextofkin] PRIMARY KEY CLUSTERED ([NextOfKinId] ASC),
+    CONSTRAINT [FK_deposit_customernextofkin_deposit_accountopening] FOREIGN KEY ([CustomerId]) REFERENCES [dbo].[deposit_accountopening] ([CustomerId])
+);
+

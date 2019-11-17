@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[deposit_transferform] (
+    [TransferFormId]             INT             IDENTITY (1, 1) NOT NULL,
+    [Structure]                  INT             NULL,
+    [Product]                    INT             NULL,
+    [TransactionDate]            DATE            NULL,
+    [ValueDate]                  DATE            NULL,
+    [ExternalReference]          VARCHAR (50)    NULL,
+    [TransactionReference]       VARCHAR (50)    NULL,
+    [PayingAccountNumber]        VARCHAR (50)    NULL,
+    [PayingAccountName]          VARCHAR (50)    NULL,
+    [PayingAccountCurrency]      VARCHAR (50)    NULL,
+    [Amount]                     DECIMAL (18, 2) NULL,
+    [BeneficiaryAccountNumber]   VARCHAR (50)    NULL,
+    [BeneficiaryAccountName]     VARCHAR (50)    NULL,
+    [BeneficiaryAccountCurrency] VARCHAR (50)    NULL,
+    [TransactionNarration]       VARCHAR (50)    NULL,
+    [ExchangeRate]               DECIMAL (18, 2) NULL,
+    [TotalCharge]                DECIMAL (18, 2) NULL,
+    [Active]                     BIT             NULL,
+    [Deleted]                    BIT             NULL,
+    [CreatedBy]                  VARCHAR (50)    NULL,
+    [CreatedOn]                  DATETIME        NULL,
+    [UpdatedBy]                  VARCHAR (50)    NULL,
+    [UpdatedOn]                  DATETIME        NULL,
+    CONSTRAINT [PK_deposit_transferform] PRIMARY KEY CLUSTERED ([TransferFormId] ASC)
+);
+

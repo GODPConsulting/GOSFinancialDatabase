@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[KAPPA_FLEISS]
+(@InputData_RangeQuery NVARCHAR (MAX), @RV NVARCHAR (4000), @Rating SQL_VARIANT)
+RETURNS FLOAT (53)
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[KAPPA_FLEISS]
+

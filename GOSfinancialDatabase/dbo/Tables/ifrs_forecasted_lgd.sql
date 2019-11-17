@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[ifrs_forecasted_lgd] (
+    [ForeCastedId]        INT              IDENTITY (1, 1) NOT NULL,
+    [Year]                INT              NULL,
+    [LGD1]                DECIMAL (36, 20) NULL,
+    [LGD2]                DECIMAL (36, 20) NULL,
+    [LGD3]                DECIMAL (36, 20) NULL,
+    [LGD4]                DECIMAL (36, 20) NULL,
+    [LGD5]                DECIMAL (36, 20) NULL,
+    [LGD6]                DECIMAL (36, 20) NULL,
+    [LGD7]                DECIMAL (36, 20) NULL,
+    [LifeTimeLGD]         DECIMAL (36, 20) NULL,
+    [LGDType]             VARCHAR (50)     NULL,
+    [ApplicableLGD]       DECIMAL (36, 20) NULL,
+    [ProductCode]         VARCHAR (50)     NULL,
+    [LoanReferenceNumber] VARCHAR (50)     NULL,
+    [CompanyCode]         VARCHAR (50)     NULL,
+    [RunDate]             DATETIME         NULL,
+    [Active]              BIT              NULL,
+    [Deleted]             BIT              NULL,
+    [CreatedOn]           DATE             NULL,
+    [Createdby]           VARCHAR (50)     NULL,
+    [UpdatedBy]           VARCHAR (50)     NULL,
+    [UpdatedOn]           DATE             NULL
+);
+

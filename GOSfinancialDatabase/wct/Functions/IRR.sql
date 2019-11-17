@@ -1,0 +1,4 @@
+﻿CREATE AGGREGATE [wct].[IRR](@CF FLOAT (53), @Per INT, @Guess FLOAT (53))
+    RETURNS FLOAT (53)
+    EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.IRR];
+

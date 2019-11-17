@@ -1,0 +1,4 @@
+﻿CREATE AGGREGATE [wct].[POLYRSQ](@known_x FLOAT (53), @known_y FLOAT (53), @degree SMALLINT)
+    RETURNS FLOAT (53)
+    EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.POLYRSQ];
+

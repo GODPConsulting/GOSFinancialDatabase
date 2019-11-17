@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[FDERIV]
+(@Func NVARCHAR (MAX), @VarName NVARCHAR (4000), @X FLOAT (53), @N INT, @H FLOAT (53), @Meth NVARCHAR (4000))
+RETURNS FLOAT (53)
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[FDERIV]
+

@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[NCFCDF]
+(@X FLOAT (53), @DF1 FLOAT (53), @DF2 FLOAT (53), @Lambda FLOAT (53))
+RETURNS FLOAT (53)
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[NCFCDF]
+

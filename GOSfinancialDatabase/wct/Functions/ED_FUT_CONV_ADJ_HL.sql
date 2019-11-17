@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [wct].[ED_FUT_CONV_ADJ_HL]
+(@Price FLOAT (53), @Vol FLOAT (53), @T1 FLOAT (53), @T2 FLOAT (53))
+RETURNS FLOAT (53)
+AS
+ EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.UserDefinedFunctions].[ED_FUT_CONV_ADJ_HL]
+

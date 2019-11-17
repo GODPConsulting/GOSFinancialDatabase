@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[credit_loan_review_operation] (
+    [LoanReviewOperationId]     INT           IDENTITY (1, 1) NOT NULL,
+    [LoanId]                    INT           NOT NULL,
+    [ProductTypeId]             INT           NOT NULL,
+    [OperationTypeId]           INT           NOT NULL,
+    [EffectiveDate]             DATE          NOT NULL,
+    [ReviewDatials]             VARCHAR (MAX) NOT NULL,
+    [InterestRate]              FLOAT (53)    NULL,
+    [Prepayment]                MONEY         NULL,
+    [PrincipalFrequencyTypeId]  INT           NULL,
+    [InterestFrequencyTypeId]   INT           NULL,
+    [PrincipalFirstPaymentDate] DATE          NULL,
+    [InterestFirstPaymentDate]  DATE          NULL,
+    [MaturityDate]              DATE          NULL,
+    [Tenor]                     INT           NULL,
+    [CasaAccountId]             INT           NULL,
+    [FeeCharges]                MONEY         NULL,
+    [ApprovalStatusId]          INT           NOT NULL,
+    [ISManagementRate]          BIT           NOT NULL,
+    [OperationCompleted]        BIT           NOT NULL,
+    [CreatedBy]                 VARCHAR (50)  NULL,
+    [CreatedOn]                 DATE          NOT NULL,
+    CONSTRAINT [PK_credit_loan_review_operation] PRIMARY KEY CLUSTERED ([LoanReviewOperationId] ASC)
+);
+

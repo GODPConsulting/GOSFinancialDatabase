@@ -1,0 +1,4 @@
+﻿CREATE AGGREGATE [wct].[IPR](@x FLOAT (53), @kl FLOAT (53), @ku FLOAT (53), @mthd NVARCHAR (4000))
+    RETURNS FLOAT (53)
+    EXTERNAL NAME [XLeratorDB_suitePLUS2008].[XLeratorDB_suitePLUS2008.IPR];
+
