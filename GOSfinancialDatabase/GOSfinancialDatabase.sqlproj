@@ -1259,7 +1259,7 @@
     </Reference>
   </ItemGroup>
   <PropertyGroup>
-    <PostBuildEvent>"C:\Program Files (x86)\Microsoft SQL Server\110\DAC\bin\sqlpackage.exe" /Action:Extract /SourceServerName:DESKTOP-K9B5ISO /SourceUser:sa /SourcePassword:godp /SourceDatabaseName:GOSFINANCIAL /TargetFile:"C:\GOS PROJECTS\etim\GosfinDb\GOSfinancialDatabase\GOSfinancialDatabase\DacPac\gosfinancial.dacpac"
+    <PostBuildEvent>"C:\Program Files (x86)\Microsoft SQL Server\110\DAC\bin\sqlpackage.exe" /Action:Extract /SourceServerName:DESKTOP-TO0NGLT /SourceUser:sa /SourcePassword:godp /SourceDatabaseName:GOSFINANCIAL /TargetFile:"C:\GOS SOFTWARE\GosfinDb\GOSfinancialDatabase\GOSfinancialDatabase\DacPac\gosfinancial.dacpac"
 </PostBuildEvent>
   </PropertyGroup>
 </Project>
